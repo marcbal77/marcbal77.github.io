@@ -10,13 +10,10 @@ window.addEventListener('DOMContentLoaded', function(){
       audio.play(); //play audio
     });
   }
-
   document.body.addEventListener('keydown', function(event){ //listen for all key presses in the body
     const button = document.querySelector('.btn[data-key="' + event.key + '"]'); // get button that has data-key attribute of the current key
     if (button) { // if there's a button for this key
       button.click(); //trigger the play
     }
   });
-
-
 });
